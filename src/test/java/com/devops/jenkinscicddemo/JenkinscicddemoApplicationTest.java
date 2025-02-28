@@ -22,6 +22,3 @@ public class JenkinscicddemoApplicationTest {
 				.andExpect(MockMvcResultMatchers.content().string("Hello " + userName + " , Jenkins CI/CD setup is done."));
 	}
 }
-
-// This test will check if the endpoint returns the correct status and message.
-// Let me know if you want me to add more test cases or enhance this! 🚀
