@@ -15,7 +15,7 @@ public class JenkinscicddemoApplicationTest {
 
 	@Test
 	public void testSetupCicd() throws Exception {
-		String userName = "Rutvik";
+		String userName = "Rocky";
 
 		mockMvc.perform(MockMvcRequestBuilders.get("/setup/{name}", userName))
 				.andExpect(MockMvcResultMatchers.status().isOk())
