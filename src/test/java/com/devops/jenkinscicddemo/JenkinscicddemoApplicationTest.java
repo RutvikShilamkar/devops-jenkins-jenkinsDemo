@@ -19,6 +19,6 @@ public class JenkinscicddemoApplicationTest {
 
 		mockMvc.perform(MockMvcRequestBuilders.get("/setup/{name}", userName))
 				.andExpect(MockMvcResultMatchers.status().isOk())
-				.andExpect(MockMvcResultMatchers.content().string("Hello Bhai" + userName + " , Jenkins CI/CD setup is done."));
+				.andExpect(MockMvcResultMatchers.content().string("Hello " + userName + " , Jenkins CI/CD setup is done."));
 	}
 }
