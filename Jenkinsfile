@@ -37,7 +37,7 @@ pipeline{
             		<p>Build number: ${BUILD_NUMBER}</p>
             		<p>Check the <a href="${BUILD_URL}">console output</a>.</p>
             	</body>
-            </html>''', mimeType: 'text/html', replyTo: 'rutvikshilamkarrms@gmail.com', subject: 'Pipeline Status: ${BUILD_NUMBER}', to: 'rutvikshilamkarrms@gmail.com'
+            </html>''', mimeType: 'text/html', replyTo: 'rutvikshilamkar@gmail.com', subject: 'Pipeline Status: ${BUILD_NUMBER}', to: 'rutvikshilamkarrms@gmail.com'
         }
     }
 }
