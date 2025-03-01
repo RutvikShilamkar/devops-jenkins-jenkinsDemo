@@ -24,7 +24,7 @@ pipeline{
 
         stage("Deploy to container"){
             steps{
-                deploy adapters: [tomcat9(credentialsId: 'tomcat-pwd', path: '', url: 'http://localhost:9090/')], contextPath: 'jenkincicdapp', war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'tomcat-pwd', path: '', url: 'http://localhost:9090/')], contextPath: 'jenkincicdscmapp', war: '**/*.war'
             }
         }
     }
@@ -37,7 +37,7 @@ pipeline{
             		<p>Build number: ${BUILD_NUMBER}</p>
             		<p>Check the <a href="${BUILD_URL}">console output</a>.</p>
             	</body>
-            </html>''', mimeType: 'text/html', replyTo: 'rutvikshilamkar@gmail.com', subject: 'Pipeline Status: ${BUILD_NUMBER}', to: 'rutvikshilamkar@gmail.com'
+            </html>''', mimeType: 'text/html', replyTo: 'rutvikshilamkar@gmail.com', subject: 'Pipeline Status: ${BUILD_NUMBER}', to: 'rutvikshilamkarrms@gmail.com'
         }
     }
 }
