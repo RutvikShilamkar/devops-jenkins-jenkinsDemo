@@ -16,6 +16,6 @@ public class JenkinscicddemoApplication {
 
 	@GetMapping("/setup/{name}")
 	public String setupCicd(@PathVariable("name") String userName) {
-		return "Hello " + userName + " , Jenkins CI/CD setup is done.";
+		return "Hello " + userName + ", Jenkins CI/CD setup is done.";
 	}
 }
