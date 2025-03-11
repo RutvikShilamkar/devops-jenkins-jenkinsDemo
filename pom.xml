@@ -11,7 +11,7 @@
 	<groupId>com.devops</groupId>
 	<artifactId>jenkinscicddemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>jenkinscicddemo</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
@@ -55,7 +55,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>JenkinsCICD</finalName>
+		<finalName>jenkinscicd</finalName>
 	</build>
 
 </project>
