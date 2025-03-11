@@ -21,7 +21,7 @@ pipeline {
 
         stage("deploy to tomcat") {
             steps {
-                deploy adapters: [tomcat9(credentialsId: 'tomcat-cred', path: '', url: 'http://localhost:9090/')], contextPath: '/declarativescript', war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'tomcat-cred', path: '', url: 'http://localhost:9090/')], contextPath: '/jenkinsfileapproach', war: '**/*.war'
             }
         }
     }
